@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>AmbitiousBally99&#39;s Studio</title>
+    <title>ProjectDay3 · AmbitiousBally99&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -77,6 +77,8 @@
 
     <link rel="preload" href= "/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href= "/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -201,14 +203,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >AmbitiousBally99&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">ProjectDay3</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>AmbitiousBally99's Studio.</a>
 </header>
@@ -227,17 +238,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            AmbitiousBally99's Studio.
-            <!-- 文章页  -->
+            ProjectDay3
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -245,12 +256,43 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                it's better to burn out than to fade away
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">589</span>Reading time: <span class="post-count reading-time">3 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/11/06</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -351,301 +393,70 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/11/06/ProjectDay4/" >
-            
-                <span>ProjectDay4</span>
-        </a>
-        <div class="abstract-content">
-            
-写一个函数，接收一个数组，对该数组进行降序排序。
+            <main class="main post-page">
+    <article class="article-entry">
+        <ol>
+<li><p>写一个整数add， 接受两个整数作为参数，返回这两个整数的和。</p>
+</li>
+<li><p>写一个函数，接受一个参数n，输出n个HelloWorld</p>
+</li>
+<li><p>写一个函数，接受一个整数n， 输出1+2+3+…+n的和</p>
+</li>
+<li><p>写一个函数， 接受一个整数n, 输出这个整数是几位数</p>
+</li>
+<li><p>写一个函数，计算一个整数数组的平均值</p>
+</li>
+<li><p>自定义一个整数数组a，读入一个整数n，如果n在数组中存在，则输出n的下标，如果不存在，输出-1.</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line">public class Homework03 &#123;</span><br><span class="line">	public static void main(String[] args)&#123;</span><br><span class="line">			System.out.println(&quot;1:&quot;);</span><br><span class="line">			System.out.println(&quot;请输入a:&quot;);</span><br><span class="line">			Scanner sca=new Scanner(System.in);</span><br><span class="line">			int a=sca.nextInt();</span><br><span class="line">			System.out.println(&quot;请输入b:&quot;);</span><br><span class="line">			Scanner scb=new Scanner(System.in);</span><br><span class="line">			int b=scb.nextInt();</span><br><span class="line">			System.out.println(&quot;和为:&quot;+add(a,b));</span><br><span class="line">			System.out.println(&quot;==========\n 2:&quot;);</span><br><span class="line">			System.out.println(&quot;请输入n:&quot;);</span><br><span class="line">			Scanner scn1=new Scanner(System.in);</span><br><span class="line">			int n1=scn1.nextInt();</span><br><span class="line">			two(n1);</span><br><span class="line">			System.out.println(&quot;==========\n 3:&quot;);</span><br><span class="line">			System.out.println(&quot;请输入n:&quot;);</span><br><span class="line">			Scanner scn2=new Scanner(System.in);</span><br><span class="line">			int n2=scn2.nextInt();</span><br><span class="line">			three(n2);</span><br><span class="line">			System.out.println(&quot;==========\n 4:&quot;);</span><br><span class="line">			System.out.println(&quot;请输入一个整数n:&quot;);</span><br><span class="line">			Scanner scn3=new Scanner(System.in);</span><br><span class="line">			int n3=scn3.nextInt();</span><br><span class="line">			four(n3);</span><br><span class="line">			System.out.println(&quot;==========\n 5:&quot;);</span><br><span class="line">			five();</span><br><span class="line">			System.out.println(&quot;==========\n 6:&quot;);</span><br><span class="line">			six();</span><br><span class="line">			&#125;</span><br><span class="line">	</span><br><span class="line">		public static int add(int a,int b)&#123;</span><br><span class="line">		return a+b;	</span><br><span class="line">		&#125;</span><br><span class="line">		public static void two(int n)&#123;</span><br><span class="line">			for(int i=1;i&lt;=n;i++)&#123;</span><br><span class="line">				System.out.println(&quot;HelloWorld&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		public static void three(int n)&#123;</span><br><span class="line">			int sum=0;</span><br><span class="line">			for(int i=1;i&lt;=n;i++)&#123;</span><br><span class="line">				sum=sum+i;</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println(sum);</span><br><span class="line">		&#125;</span><br><span class="line">		public static void four(int a)&#123;</span><br><span class="line">			int i=0;</span><br><span class="line">			while(a/10&gt;=1)&#123;</span><br><span class="line">				a=a/10;</span><br><span class="line">				i++;</span><br><span class="line">			&#125;</span><br><span class="line">			i++;</span><br><span class="line">			System.out.println(&quot;这个整数是&quot;+i+&quot;位数&quot;);</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		public static void five()&#123;</span><br><span class="line">			double[] array=new double[5];</span><br><span class="line">			double ave=0;</span><br><span class="line">			double sum=0;</span><br><span class="line">			System.out.println(&quot;请输入一个长度为5的数组:&quot;);</span><br><span class="line">			Scanner input=new Scanner(System.in);</span><br><span class="line">			for(int i=0;i&lt;array.length;i++)&#123;</span><br><span class="line">				array[i]=input.nextDouble();</span><br><span class="line">				sum=sum+array[i];</span><br><span class="line">			&#125;</span><br><span class="line">			ave=sum/array.length;</span><br><span class="line">			System.out.println(&quot;平均数为：&quot;+ave);</span><br><span class="line">		&#125;</span><br><span class="line">			public static void six()&#123;</span><br><span class="line">				int[] a=&#123;3,8,1,9,7,8&#125;;//自定义的数组</span><br><span class="line">				System.out.println(&quot;请输入一个整数n:&quot;);</span><br><span class="line">				Scanner sc=new Scanner(System.in);</span><br><span class="line">				int n=sc.nextInt();</span><br><span class="line">				//int i=0;</span><br><span class="line">				int num=0;</span><br><span class="line">				for(int i=0;i&lt;a.length;i++)&#123;</span><br><span class="line">					if(a[i]==n)&#123;</span><br><span class="line">						System.out.println(i);</span><br><span class="line">						num++;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">//				while(i&lt;a.length)&#123;</span><br><span class="line">//					if(a[i]==n)&#123;</span><br><span class="line">//						System.out.println(i);</span><br><span class="line">//						num++;</span><br><span class="line">//					&#125;</span><br><span class="line">//					i++;</span><br><span class="line">//				&#125;</span><br><span class="line">				if(num==0)&#123;</span><br><span class="line">					System.out.println(-1);</span><br><span class="line">				&#125;</span><br><span class="line">					</span><br><span class="line">			&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
-写一个函数，接收一个数组，获取该数组的最小值。
-
-现在有如下的一个数组：   int oldArr[]={1,3,4,5,0,0,6,6,0,5,4,7,6,7,0,5} ; 要求将以上数组中值为0的项去掉，将不为0的值存入一个新的数组，生成的新数组为：int newArr[]={1,3,4,5,6,6,5,4,7,6,7,5} ; 
-
-现在给出两个数组： 数组a：{1，7，9，11，13，15，17，19}   数组b：{2，4，6，8，10}      将两个数组合并为数组c，按升序排列。
-
-
-123456789101112131...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/06</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/11/06/ProjectDay3/" >
-            
-                <span>ProjectDay3</span>
-        </a>
-        <div class="abstract-content">
-            
-写一个整数add， 接受两个整数作为参数，返回这两个整数的和。
-
-写一个函数，接受一个参数n，输出n个HelloWorld
-
-写一个函数，接受一个整数n， 输出1+2+3+…+n的和
-
-写一个函数， 接受一个整数n, 输出这个整数是几位数
-
-写一个函数，计算一个整数数组的平均值
-
-自定义一个整数数组a，读入一个整数n，如果n在数组中存在，则输出n的下标，如果不存在，输出-1.
-
-
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565...
+        <div class="license-wrapper">
+            <p>Author：<a href="http://yoursite.com">John Doe</a>
+            <p>原文链接：<a href="http://yoursite.com/2019/11/06/ProjectDay3/">http://yoursite.com/2019/11/06/ProjectDay3/</a>
+            <p>发表日期：<a href="http://yoursite.com/2019/11/06/ProjectDay3/">November 6th 2019, 7:54:10 pm</a>
+            <p>更新日期：<a href="http://yoursite.com/2019/11/06/ProjectDay3/">November 6th 2019, 7:55:06 pm</a>
+            <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/06</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/11/06/ProjectDay2/" >
-            
-                <span>ProjectDay2</span>
-        </a>
-        <div class="abstract-content">
-            
-计算1+3+5+7+…+99的和。
-1234567891011public static void one()&#123;		int sum=0;		int i=1;		while(i&lt;=100)&#123;			if(i%2==1)&#123;				sum=sum+i;			&#125;			i++;		&#125;		System.out.println(sum);	&#125;
-
-求100以内所有能被3整除但不能被5整除的数字的和。
-
-
-123456789101112public static void two()&#123;			int sum=0;			int i=1...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/06</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/11/06/ProjectDay1/" >
-            
-                <span>ProjectDay1</span>
-        </a>
-        <div class="abstract-content">
-            1.请编码实现一个程序，该程序负责向控制台打印 HelloWorld。
-1System.out.println(&quot;HelloWorld&quot;);
-
-2.写一个程序，声明9种不同类型(包含String)的变量并为这些变量赋值，最终在控制台中打印输出。
-1234567891011121314151617181920byte num1=127;short num2=256;int num3=1024;long num4=2048L;float num5=3.5E28F;double num6=1.5E32;char zifu1=&apos;爱&apos;;char zifu2=...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/06</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/11/06/testblog/" >
-            
-                <span>Test Blog</span>
-        </a>
-        <div class="abstract-content">
-            我的测试篇
-人生苦短，我用Python
-
-#####Python是怎样的语言
-
-Python 是一种解释型语言
-Python 是交互式语言
-Python 是面向对象语言
-Python 是初学者的语言
-
-#####Python 特点
-
-.易于学习
-易于阅读
-易于维护
-丰富的库
-可移植
-可扩展
-
-#####Python之父Guido van Rossum
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/06</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/11/06/hello-world/" >
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-
-More info: Writing
-Run server1$ hexo server
-
-Mo...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/06</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
-    
-</main>
-            <!-- profile -->
+    <ul class="post-paginator">
+        <li class="next">
             
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= https://p0.ssl.qhimgs1.com/sdr/400__/t01486494f98aece040.jpg >
-    <div class="profile-name">AmbitiousBally99</div>
-    
-    <div class="profile-signature">
-        witness me
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2019/11/06/ProjectDay4/" title= "ProjectDay4">
+                    <div class="nextTitle">ProjectDay4</div>
+                </a>
             
-                <a href="mailto:1351598262@qq.com" target="_blank" rel="noopener" class="iconfont-archer email" title=email ></a>
+        </li>
+        <li class="previous">
             
-        
-    
-        
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/11/06/ProjectDay2/" title= "ProjectDay2">
+                    <div class="prevTitle">ProjectDay2</div>
+                </a>
             
-                <a href="//github.com/AmbitiousBally99" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-        
     
-        
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
     
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
     
 
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href= //www.baidu.com target="_black">friendA</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href= //www.google.com target="_black">friendB</a>
-                    </span>
-                
-            
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href = "/about" >ABOUT ME</a>
-        </div>
-    
-</div>
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
             
         </div>
         <footer class="footer footer-unloaded">
@@ -721,6 +532,24 @@ Mo...
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -929,6 +758,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
